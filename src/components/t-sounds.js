@@ -10,7 +10,7 @@ import TKick from "./t-kick";
 
 const TSounds = ({ classes, kickName, kicks, onKickTriggered }) => {
   return (
-    <Card className={classes.card}>
+    <Card id="drum-machine" className={classes.card}>
       <CardHeader
         subheader={
           <div
@@ -19,7 +19,7 @@ const TSounds = ({ classes, kickName, kicks, onKickTriggered }) => {
               justifyContent: "center"
             }}
           >
-            <span>{kickName}</span>
+            <span id="display">{kickName}</span>
           </div>
         }
       />

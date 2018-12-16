@@ -9,6 +9,8 @@ const TKick = ({ kickKey, url, kickName, onKickTriggered }) => {
   return (
     <div className="kick">
       <Button
+        id={`kick-${kickKey}`}
+        className="drum-pad"
         variant="contained"
         style={{ height: "100%" }}
         onClick={() => {
@@ -20,7 +22,11 @@ const TKick = ({ kickKey, url, kickName, onKickTriggered }) => {
         {kickKey}
       </Button>
       {/* Solution inspired by https://codepen.io/StudentOfJS/pen/dzjPwP/ */}
-      <audio ref={element => (audioRef = element)}>
+      <audio
+        ref={element => (audioRef = element)}
+        className="clip"
+        id={kickKey}
+      >
         <source src={url} type="audio/mpeg" />
       </audio>
     </div>
