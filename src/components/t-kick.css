@@ -1,0 +1,6 @@
+.kick {
+  box-sizing: border-box;
+  height: 4rem;
+  display: inline-block;
+  margin: 0.5rem;
+}

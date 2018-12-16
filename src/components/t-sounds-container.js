@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import TSounds from "./t-sounds";
 
 class TSoundsContainer extends Component {
   render() {
-    return <span>Taekwondo kick sounds!</span>;
+    return <TSounds />;
   }
 }
 
