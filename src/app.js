@@ -7,6 +7,11 @@ class App extends Component {
     return (
       <div className="app">
         <TSoundsContainer />
+        <span>
+          Sounds from{" "}
+          <a href="http://soundbible.com/tags-knock.html">soundbible</a> by Mike
+          Koenig
+        </span>
       </div>
     );
   }
