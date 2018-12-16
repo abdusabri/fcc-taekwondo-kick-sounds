@@ -8,7 +8,7 @@ import { tSoundsStyles } from "./t-sounds-styles";
 import Divider from "@material-ui/core/Divider";
 import TKick from "./t-kick";
 
-const TSounds = ({ classes, kickName, kicks }) => {
+const TSounds = ({ classes, kickName, kicks, onKickTriggered }) => {
   return (
     <Card className={classes.card}>
       <CardHeader
@@ -31,6 +31,7 @@ const TSounds = ({ classes, kickName, kicks }) => {
             kickName={kick.name}
             url={kick.url}
             kickKey={kick.key}
+            onKickTriggered={onKickTriggered}
           />
         ))}
       </CardContent>
@@ -47,7 +48,8 @@ TSounds.propTypes = {
       name: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  onKickTriggered: PropTypes.func.isRequired
 };
 
 export default withStyles(tSoundsStyles)(TSounds);

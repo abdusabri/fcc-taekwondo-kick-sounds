@@ -8,8 +8,18 @@ class TSoundsContainer extends Component {
     kickName: ""
   };
 
+  handleKickTriggered = kickName => {
+    this.setState({ kickName });
+  };
+
   render() {
-    return <TSounds kicks={this.state.kicks} kickName={this.state.kickName} />;
+    return (
+      <TSounds
+        kicks={this.state.kicks}
+        kickName={this.state.kickName}
+        onKickTriggered={this.handleKickTriggered}
+      />
+    );
   }
 }
 
