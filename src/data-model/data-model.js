@@ -1,18 +1,18 @@
 export const getKicks = () => [
   {
     key: "Q",
-    name: "Roundhouse Kick",
+    name: "Roundhouse_Kick",
     url:
       "http://soundbible.com/mp3/Roundhouse Kick-SoundBible.com-1663225804.mp3"
   },
   {
     key: "W",
-    name: "Sweep Kick",
+    name: "Sweep_Kick",
     url: "http://soundbible.com/mp3/Sweep Kick-SoundBible.com-808409893.mp3"
   },
   {
     key: "E",
-    name: "Spin Kick",
+    name: "Spin_Kick",
     url: "http://soundbible.com/mp3/Spin Kick-SoundBible.com-1263586030.mp3"
   },
   {
@@ -27,22 +27,22 @@ export const getKicks = () => [
   },
   {
     key: "D",
-    name: "Upper Cut",
+    name: "Upper_Cut",
     url: "http://soundbible.com/mp3/Upper Cut-SoundBible.com-1272257235.mp3"
   },
   {
     key: "Z",
-    name: "Right Cross",
+    name: "Right_Cross",
     url: "http://soundbible.com/mp3/Right Cross-SoundBible.com-1721311663.mp3"
   },
   {
     key: "X",
-    name: "Left Hook",
+    name: "Left_Hook",
     url: "http://soundbible.com/mp3/Left Hook-SoundBible.com-516660386.mp3"
   },
   {
     key: "C",
-    name: "Right Hook",
+    name: "Right_Hook",
     url: "http://soundbible.com/mp3/Right Hook-SoundBible.com-1406389182.mp3"
   }
 ];

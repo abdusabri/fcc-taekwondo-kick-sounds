@@ -18,11 +18,11 @@ class TSoundsContainer extends Component {
   };
 
   componentDidMount() {
-    document.addEventListener("keyup", this.handleKeyUp);
+    document.addEventListener("keypress", this.handleKeyUp);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("keyup", this.handleKeyUp);
+    document.removeEventListener("keypress", this.handleKeyUp);
   }
 
   render() {

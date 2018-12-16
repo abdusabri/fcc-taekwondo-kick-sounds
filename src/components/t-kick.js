@@ -19,16 +19,17 @@ const TKick = ({ kickKey, url, kickName, onKickTriggered }) => {
           audioRef.play();
         }}
       >
+        {/* Solution inspired by https://codepen.io/StudentOfJS/pen/dzjPwP/ */}
+        <audio
+          ref={element => (audioRef = element)}
+          className="clip"
+          id={kickKey}
+          src={url}
+        >
+          {/* <source  type="audio/mpeg" /> */}
+        </audio>
         {kickKey}
       </Button>
-      {/* Solution inspired by https://codepen.io/StudentOfJS/pen/dzjPwP/ */}
-      <audio
-        ref={element => (audioRef = element)}
-        className="clip"
-        id={kickKey}
-      >
-        <source src={url} type="audio/mpeg" />
-      </audio>
     </div>
   );
 };
