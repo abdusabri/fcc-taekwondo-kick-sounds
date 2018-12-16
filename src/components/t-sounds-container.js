@@ -12,6 +12,19 @@ class TSoundsContainer extends Component {
     this.setState({ kickName });
   };
 
+  handleKeyUp = event => {
+    const el = document.getElementById(`kick-${event.key.toUpperCase()}`);
+    if (el) el.click();
+  };
+
+  componentDidMount() {
+    document.addEventListener("keyup", this.handleKeyUp);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keyup", this.handleKeyUp);
+  }
+
   render() {
     return (
       <TSounds
